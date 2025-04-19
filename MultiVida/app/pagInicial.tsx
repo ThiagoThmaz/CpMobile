@@ -53,4 +53,3 @@ const styles = StyleSheet.create({
         marginVertical: 5,
         width: '80%'
     }
-});
