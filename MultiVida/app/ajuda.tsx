@@ -18,8 +18,8 @@ export default function Ajuda(){
       <Image source={require('../assets/images/ajuda2.png')} style={styles.image} /> */}
       <TextInput placeholder="Seu nome" style={styles.input} value={nome} onChangeText={setNome} />
       <TextInput
-        placeholder="Como podemos te ajudar?"
-        style={[styles.input, { height: 100 }]}
+        placeholder="Como você está se sentindo hoje?"
+        style={styles.input}
         multiline
         value={mensagem}
         onChangeText={setMensagem}

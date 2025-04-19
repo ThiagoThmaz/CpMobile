@@ -9,20 +9,23 @@ export default function PagInicial(){
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Bem-vindo ao MultiVida 💙</Text>
-      <Image source={require('../assets/saude1.jpg')} style={styles.image} />
-      <Image source={require('../assets/saude2.png')} style={styles.image} />
+
+      <View style={styles.image}>
+        <Image source={require('../assets/saude1.png')} style={{width: 200, height: 150, marginVertical: 10}} />
+        <Image source={require('../assets/saude2.png')} style={{width: 200, height: 150, marginVertical: 10}} />
+      </View>
 
       <View style={styles.buttonContainer}>
         <Button title="Dicas" onPress={() => router.push('/dicas')} />
       </View>
       <View style={styles.buttonContainer}>
-        <Button title="Ajuda" onPress={() => router.push('/ajuda')} />
+        <Button title="Motivação" onPress={() => router.push('/ajuda')} />
       </View>
       <View style={styles.buttonContainer}>
         <Button title="Recursos" onPress={() => router.push('/recursos')} />
       </View>
       <View style={styles.buttonContainer}>
-        <Button title="Sobre os Desenvolvedores" onPress={() => router.push('/sobre')} />
+        <Button title="Sobre os Desenvolvedores" onPress={() => router.push('/sobre/')} />
       </View>
     </ScrollView>
   );
@@ -30,11 +33,12 @@ export default function PagInicial(){
     
 const styles = StyleSheet.create({
     container: {
+        display: 'flex',
         flexGrow: 1,
         alignItems: 'center',
         justifyContent: 'center',
         padding: 20,
-        backgroundColor: '#3A59D1'
+        backgroundColor: 'white' // #3A59D1
     },
     title: {
         fontSize: 24,
@@ -42,9 +46,8 @@ const styles = StyleSheet.create({
         marginBottom: 20
     },
     image: {
-        width: 200,
-        height: 150,
-        marginVertical: 10
+        
+        flexDirection: 'row'
     },
     buttonContainer: {
         marginVertical: 5,
