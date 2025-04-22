@@ -93,7 +93,6 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
   image: {
-
     flexDirection: 'row'
   },
   buttonContainer: {
