@@ -8,7 +8,7 @@ export default function Ajuda() {
   const buscarMensagem = async () => {
     setCarregando(true);
     try {
-      const resposta = await fetch('https://api.adviceslip.com/advice');
+      const resposta = await fetch(`https://api.adviceslip.com/advice?timestamp=${Date.now()}`);
       const json = await resposta.json();
       setMensagem(json.slip.advice);
     } catch (erro) {

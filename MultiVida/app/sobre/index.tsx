@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { View, Text, Alert, TextInput, Button, StyleSheet, TouchableOpacity, Linking} from "react-native";
+import { View, Text, Alert, TextInput, Button, StyleSheet, TouchableOpacity, Linking, Image} from "react-native";
 
 export default function Integrantes() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>INTEGRANTES</Text>
+
+      <Image source={require('../../assets/logofiap.png')} style={{width: 200, height: 150, marginVertical: 10, margin: 'auto'}} />
 
       <View style={styles.item}>
         <Text style={styles.name}>Eduardo do Nascimento Barriviera</Text>
