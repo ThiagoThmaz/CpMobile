@@ -1,10 +1,12 @@
 import { Link } from "expo-router";
 import React from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 export default function LinkScreen() {
   return (
     <View style={styles.container}>
+      <Image source={require('../assets/saude1.png')} style={styles.imagem} />
+      <Image source={require('../assets/logofiap.png')} style={styles.imagem} />
       <Text style={styles.title}>Links</Text>
       <View style={styles.link}>
         <Link href="/" asChild>
@@ -31,6 +33,7 @@ const styles = StyleSheet.create({
     padding: 20,
     justifyContent: "center",
     backgroundColor: "#f0f0f0",
+    display: 'flex',
   },
   title: {
     fontSize: 24,
@@ -41,4 +44,10 @@ const styles = StyleSheet.create({
   link: {
     marginVertical: 10,
   },
+  imagem: {
+    flexDirection: 'row',
+    width: 200,
+    height: 150,
+    marginVertical: 10
+  }
 });
