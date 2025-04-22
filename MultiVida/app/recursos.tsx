@@ -7,7 +7,7 @@ export default function LinkScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Links</Text>
       <View style={styles.link}>
-        <Link href="/index" asChild>
+        <Link href="/" asChild>
           <Button title="Ir para tela Inicial" />
         </Link>
       </View>
