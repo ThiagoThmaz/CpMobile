@@ -5,6 +5,9 @@ export default function Layout(){
     return (
         <Drawer>
             <Drawer.Screen name="pagInicial" options={{ title: "MultiVida", headerShown: false }} />
+            <Drawer.Screen name="ajuda" options={{ title: "Motivação", headerShown: true }} />
+            <Drawer.Screen name="dicas" options={{ title: "Dicas", headerShown: true }} />
+            <Drawer.Screen name="recursos" options={{ title: "Recursos", headerShown: true }} />
         </Drawer>
     )
 }

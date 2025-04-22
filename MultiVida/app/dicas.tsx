@@ -37,9 +37,9 @@ export default function Dicas() {
 
   return (
     <ScrollView style={styles.container}>
-      {/* Imagem de capa */}
+      
       <Image
-        source={{ uri: "https://images.unsplash.com/photo-1504198453319-5ce911bafcde" }}
+        source={require('../assets/saude_mental.png')}
         style={styles.headerImage}
         resizeMode="cover"
       />
@@ -52,6 +52,12 @@ export default function Dicas() {
         mesmo em meio ao caos. Reconhecer a importância do autocuidado é um
         passo fundamental para uma vida mais leve e feliz.
       </Text>
+
+      <Image
+        source={require('../assets/dicas.jpg')}
+        style={styles.headerImage}
+        resizeMode="cover"
+      />
 
       <Text style={styles.subtitle}>✨ Pequenas ações que fazem diferença:</Text>
 
@@ -93,11 +99,12 @@ const styles = StyleSheet.create({
     lineHeight: 24,
   },
   subtitle: {
-    fontSize: 20,
+    fontSize: 19,
     fontWeight: "600",
     marginBottom: 15,
     color: "#264653",
     marginHorizontal: 20,
+    marginTop: 15
   },
   card: {
     backgroundColor: "#ffffff",
