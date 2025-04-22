@@ -8,18 +8,21 @@ export default function Integrantes() {
 
       <View style={styles.item}>
         <Text style={styles.name}>Eduardo do Nascimento Barriviera</Text>
+        <Text style={styles.name}>RM: 555309 </Text>
       </View>
 
       <View style={styles.separator} />
 
       <View style={styles.item}>
         <Text style={styles.name}>Thiago Lima de Freitas</Text>
+        <Text style={styles.name}>RM: 556795</Text>
       </View>
 
       <View style={styles.separator} />
 
       <View style={styles.item}>
         <Text style={styles.name}>Thiago Thomaz Sales</Text>
+        <Text style={styles.name}>RM: 557992</Text>
       </View>
     </View>
   );
@@ -27,7 +30,7 @@ export default function Integrantes() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 20
+    padding: 20,
   },
   title: {
     fontSize: 24,
