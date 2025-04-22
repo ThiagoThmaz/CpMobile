@@ -1,10 +1,11 @@
 import React from "react";
-import { View, Text, StyleSheet, Pressable, Linking, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, Pressable, Linking, TouchableOpacity, Image } from "react-native";
 
 export default function Contato() {
   return (
     <View style={styles.container}>
         <Text style={styles.title}>CONTATO</Text>
+        <Image source={require('../../assets/logofiap.png')} style={{width: 200, height: 150, marginVertical: 10, margin: 'auto'}} />
 
         <Text style={styles.text}>Eduardo do Nascimento Barriviera</Text>
         <Text style={styles.info}>eduardobarriviera1805@gmail.com</Text>
@@ -15,7 +16,7 @@ export default function Contato() {
         <View style={styles.separator} />
 
         <Text style={styles.text}>Thiago Lima de Freitas</Text>
-        <Text style={styles.info}>thiago.lima@example.com</Text>
+        <Text style={styles.info}>thiagllima26@gmail.com</Text>
         <TouchableOpacity onPress={() => Linking.openURL('https://github.com/thiglfa')}>
             <Text style={styles.link}>github.com/thiglfa</Text>
         </TouchableOpacity>
@@ -23,7 +24,7 @@ export default function Contato() {
         <View style={styles.separator} />
 
         <Text style={styles.text}>Thiago Thomaz Sales</Text>
-        <Text style={styles.info}>thiago.sales@example.com</Text>
+        <Text style={styles.info}>thmz.salles@gmail.com</Text>
         <TouchableOpacity onPress={() => Linking.openURL('https://github.com/ThiagoThmaz')}>
           <Text style={styles.link}>github.com/ThiagoThmaz</Text>
         </TouchableOpacity>
